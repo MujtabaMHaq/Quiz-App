@@ -2,24 +2,34 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 
 .main{
     width: 100%;
+    height: 100vh;
+    background-color: #B9EDDD;
+    padding-top: 10%;
+    margin: 0 auto;
 }
 
 
 .container{
     margin: 0 auto;
-    width: 70%;
-    margin-top: 10%;
+    width: 50%;
     padding: 20px;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
+    background-color: #87CBB9;
 
+}
 
+.container h1{
+    text-align: center;
+    font-weight: bolder;
+    margin-bottom: 30px;
 }
 
 .ctn{
@@ -31,7 +41,7 @@
 }
 
 .ctn input{
-    width: 78%;
+    width: 74%;
     height: 50px;
     border-radius: 10px;
     font-size: 30px;
@@ -51,9 +61,11 @@
     align-self: center;
 }
 
+
 .main_container{
     margin: 0 auto;
     width: 60%;
+    height: 100vh;
     border: 2px solid black;
     border-radius: 20px;
     padding: 20px;
@@ -93,4 +105,93 @@
 
 #option{
     list-style: none;
+
+}
+#Questions{
+    font-weight: bolder;
+    font-size: 25px;
+    margin-bottom: 5px;
+    text-decoration: underline;
+    padding: 10px;
+}
+
+#option li{
+    width: 100%;
+    font-size: 25px;
+    margin-bottom: 5px;
+    border: 1px solid #569DAA;
+    background-color: #87CBB9;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Net{
+    width: 120px;
+    height: 30px;
+}
+
+#nowCount , #totalCount{
+    font-size: 20px;
+}
+
+.main_Footer{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.Correct{
+    background-color: #059212 !important;
+    color: #87CBB9;
+}
+
+.wrong{
+    background-color: #FF204E !important;
+    color: #87CBB9;
+}
+
+.dontTouch{
+    pointer-events: none;
+}
+
+.touch{
+    pointer-events: visible;
+}
+
+
+.main_result{
+    width: 100%;
+}
+
+.container_result{
+    margin: 0 auto;
+    width: 60%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 8%;
+    font-size: 50px;
+    text-align: center;
+
+
+}
+.percentage{
+    font-size: 120px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+}
+
+.result_text{
+    display: block;
+}
+
+.all_result{
+    font-size: 30px !important;
+}
+
+.resultmg{
+    width: 250px;
+    height: 250px;
 }

@@ -6,21 +6,23 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body onload="startquiz()">
-    <div class="main" >
-    <div class="main_container">
+<body onload="startquiz() , Startcounter()">
+    <div class="main"  id="gaib" >
+
+    <div class="main_container" >
+
         <!-- Header -->
         <div class="main_head">
             <div>
                 <span>Name : </span>
-                <span id="fulName"></span>
+                <span id="fulName">Mujtaba Mansoor</span>
                 <br />
-                <span>Email : </span>
-                <span id="FulEmail">shahpervez9@gmail.com</span>
+                <span>Email : Mujtaba317364@gmail.com</span>
+                <span id="FulEmail"></span>
             </div>
             <div>
                 <span>Time : </span>
-                <span>00:00</span>
+                <span id="counter">60</span>
             </div>
 
 
@@ -41,18 +43,42 @@
             </div>
 
         </div>
+        <br />
         <hr />
         <!-- Footer -->
         <div class="main_Footer">
             <div>
                 <span  id="nowCount">1</span> / <span id="totalCount">7</span>
             </div>
-            <button onclick="Nxt()">Next</button>
+            <button onclick="Nxt()" disabled id="next" class="Net">Next</button>
 
         </div>
 
     </div>
 </div>
+
+
+<div id="result" class="hid" class="main_result">
+    <div class="container_result">
+        <div >
+            <img src="./images/fail.jpg" id="resultImg" class="resultmg" alt="">
+            <span id="showPassFail" class="result_text" >Pass</span>
+        </div>
+        <div class="percentage" > <span id="percentage" class="percentage">0</span>%</div>
+        <div><span id="showCorrectAns" class="all_result">0</span>/
+             <span id="totalCountResult" class="all_result">0</span>
+        </div>
+
+
+    <span id="showCorrectAns" class="all_result">0</span>/
+    <span id="showwrongAns" class="all_result">0</span>
+    <br />
+    
+    </div>  
+
+</div>
+
+
     
 </body>
 <script src="quiz.js"></script>
